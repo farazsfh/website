@@ -9,10 +9,15 @@
 h1, h2, h3, p { margin: 2px 0; }
 body { height: 900px; }
 .scatter { position: absolute; }
+#toggle { position: absolute; top: 10px; right: 20px; cursor: pointer; }
+body.dark { background: #111; color: #ddd; }
+body.dark a { color: #8cb4ff; }
 </style>
 </head>
 
 <body>
+
+<a id="toggle" onclick="document.body.classList.toggle('dark'); this.textContent = document.body.classList.contains('dark') ? 'light mode' : 'dark mode';">dark mode</a>
 
 <h1>Faraz Hussain</h1>
 <p>Bachelor of Science, Computer Science @ University of Toronto (2023)</p>

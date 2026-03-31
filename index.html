@@ -11,7 +11,9 @@ body { font-family: 'Nunito', system-ui, sans-serif; margin: 40px 0 0 40px; }
 h1, h2, h3, p { margin: 2px 0; }
 .columns { display: flex; gap: 80px; }
 .column h2 { font-size: 1.5em; }
-.column h3 { margin-top: 12px; }
+.column h3 { margin-top: 0; }
+.card { background: #f5f5f5; border-radius: 8px; padding: 12px 16px; margin-top: 12px; }
+body.dark .card { background: #2a2a2a; }
 #toggle { position: absolute; top: 10px; right: 20px; cursor: pointer; }
 body.dark { background: #1a1a1a; color: #ddd; }
 body.dark a { color: #8cb4ff; }
@@ -31,28 +33,46 @@ body.dark a { color: #8cb4ff; }
 <div class="columns">
 <div class="column">
 <h2>Experience</h2>
+<div class="card">
 <h3>Meta</h3>
 <p>Meta Superintelligence Labs (MSL)</p>
+</div>
+<div class="card">
 <h3>Asana</h3>
 <p>Conversion & Retention</p>
+</div>
+<div class="card">
 <h3>Robinhood</h3>
 <p>Market Data</p>
+</div>
+<div class="card">
 <h3>Instagram</h3>
 <p>Account Recovery</p>
+</div>
+<div class="card">
 <h3>Asana</h3>
 <p>New Revenue</p>
+</div>
+<div class="card">
 <h3>Wish</h3>
 <p>Merchant and Products</p>
+</div>
+<div class="card">
 <h3>University of Toronto</h3>
 <p>TA for CSC209 — Software Tools and Systems Programming</p>
 </div>
+</div>
 <div class="column">
 <h2>Research</h2>
+<div class="card">
 <h3>WIP...</h3>
 <p>wip...</p>
+</div>
+<div class="card">
 <h3>University of Toronto</h3>
 <p>NLP applications in analysis of cultural event discourse on Twitter</p>
 <p>Supervised by Dr. Annie En-Shiun Lee</p>
+</div>
 </div>
 </div>
 
@@ -75,14 +95,14 @@ body.dark a { color: #8cb4ff; }
   zzZ
 </pre>
 
-<pre class="cat" style="top: 80%; left: 25%;">
+<pre class="cat" style="top: 12%; left: 18%;">
  _._     _,-'""`-._
 (,-.`._,'(       |\`-/|
     `-.-' \ )-`( , o o)
           `-    \`_`"'-
 </pre>
 
-<pre class="cat" style="top: 40%; right: 30%;">
+<pre class="cat" style="top: 43%; right: 30%;">
           .__....._             _.....__,
             .": o :':         ;': o :".
             `. `-' .'.       .'. `-' .'
@@ -113,7 +133,7 @@ body.dark a { color: #8cb4ff; }
  ((_/`(____,-'
 </pre>
 
-<pre class="cat" style="top: 40%; left: 18%;">
+<pre class="cat" style="top: 60%; right: 55%;">
    |\---/|
    | ,_, |
     \_`_/-..----.
@@ -122,7 +142,7 @@ body.dark a { color: #8cb4ff; }
   (_,...'(_,.`__)/'.....+
 </pre>
 
-<pre class="cat" style="top: 15%; left: 42%;">
+<pre class="cat" style="top: 12%; left: 42%;">
   |\__/,|
   |_ _  |.---.
   ( T   )     )

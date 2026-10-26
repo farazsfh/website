@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+<title>12. Orders and Trading Strategies - SIE Notes</title>
+<style>
+body { font-family: 'Nunito', system-ui, sans-serif; margin: 0; padding: 0; max-width: 800px; margin: 0 auto; padding: 20px; line-height: 1.6; }
+h1, h2, h3 { margin: 1.2em 0 0.4em; }
+h1 { font-size: 1.6em; }
+h2 { font-size: 1.3em; }
+a { color: #1a73e8; text-decoration: none; }
+a:hover { text-decoration: underline; }
+img { max-width: 100%; border-radius: 6px; margin: 12px 0; }
+ul, ol { padding-left: 1.5em; }
+li { margin: 4px 0; }
+.nav { margin-bottom: 24px; font-size: 0.9em; }
+.nav a { margin-right: 12px; }
+.chapter-list { list-style: none; padding: 0; }
+.chapter-list li { margin: 8px 0; }
+.chapter-list a { font-size: 1.05em; }
+#toggle { position: absolute; top: 10px; right: 20px; cursor: pointer; z-index: 2; }
+body.dark { background: #1a1a1a; color: #ddd; }
+body.dark a { color: #8cb4ff; }
+body.dark img { border: 1px solid #333; }
+
+</style>
+</head>
+<body>
+<a id="toggle" onclick="document.body.classList.toggle('dark'); this.textContent = document.body.classList.contains('dark') ? 'light mode' : 'dark mode';">dark mode</a>
+
+<div class="nav"><a href="/sie/">&larr; All Chapters</a> · <a href="/">Home</a></div>
+<h1>12. Orders and Trading Strategies</h1>
+<p><strong>Trade Capacity</strong></p>
+<p><strong>Broker (Agent)</strong>: A firm that acts as a broker finds the other side of the trade on behalf of its client. They are finding buyers for seller and sellers for buyers FOR their customer</p>
+<ul>
+<li>They earn a commission for its effort, a seperate dollar amount per trade on the trade confirmation</li>
+</ul>
+
+<p><strong>Dealers (Principals)</strong>: When a firm buys or sells securities for or from its own account</p>
+<ul>
+<li>A dealer that is ready to buy/sell a specific stock is a market maker for that stock</li>
+<ul>
+<li>Market makers provide a 2 sided quote, a bid (what its willing to buy for) and a ask price (what its willing to sell for)</li>
+<ul>
+<li>Example: $19.90 - $20.25 is a bid of $19.90 or less, or ask of $20.25 or more, the difference is the spread, their profit.</li>
+<li>Bids and offers are typically posted in round lots. For securities priced at &lt;=$250, lot size is 100, for &gt;$250, the lot size reduces in proportion to price</li>
+</ul>
+</ul>
+<li>Dealers adjust prices for retail customers (markup and markdown), calculated from inside market (the highest big and lowest ask from all market makers)</li>
+</ul>
+
+<p>Dealers assume risk, are principals, and earn markup/markdown</p>
+<p>Brokers don&#x27;t assume risk, earn on commission, they are an agent for customer</p>
+
+<p>FINRA enforces a &quot;fair limit of&quot; maximum markup/markdown/commission of 5%. (divide markup by prevailing price)</p>
+<ul>
+<li>Only a guideline though, depends on the security, its availability, price (lower prices are charged more), amount of money, disclosure, nature of the business</li>
+</ul>
+
+<p><strong>Proceeds Transaction</strong>: When a customer directs a member firm to sell a security, and use its proceed to buy another security</p>
+<ul>
+<li>You can&#x27;t double dip your commission (if you buy an sell for $5000, you can only charge max 5% of $5000, not $10,000)</li>
+</ul>
+
+<p>Securities that require delivery of prospectus are exempt bc they are sold at a specific public offering price</p>
+<ul>
+<li>Examples of the securities that are exempt include initial public offerings, municipal bonds, and mutual fund shares.</li>
+</ul>
+
+<p><strong>Discretionary Orders</strong>: Clients can give registered representatives discretion to make orders/trades</p>
+<ul>
+<li>The RR should mention whether or not they used discretions (if client consented or not)</li>
+<li>and if it was solicited (clients idea or theirs)</li>
+</ul>
+
+<p><strong>Types of Transactions</strong></p>
+<p>When <strong>buying</strong> securities, one may:</p>
+<ul>
+<li>Buy by paying in full</li>
+<li>Buy with borrowed funds (on margin)</li>
+</ul>
+
+<p>When <strong>selling</strong> securities, one may:</p>
+<ul>
+<li>Sell what they own -&gt; <strong>long sale</strong></li>
+<li>Sell what they don&#x27;t own (borrowed) -&gt; <strong>short sale</strong></li>
+<ul>
+<li>The seller will need to buy back the shares in the future to return to the lender</li>
+<li>They make profit if the price in the future is lower than the price when borrowed (<strong>bearish</strong>)</li>
+<li>Short sales must be executed in a margin account</li>
+<ul>
+<li>Brokerage firms give short sellers shares from other margin accounts that have provided permission</li>
+<li>As long as short sellers account maintains required margin equity, theres no set time they must repurchase borrowed shares</li>
+<li>If cash dividend is paid on borrowed stock, the borrower must pay it to the lender</li>
+</ul>
+</ul>
+</ul>
+
+<p><strong>Market Order</strong>: client doesn&#x27;t specify a price, it gets executed at best price available once entered, usually used for liquid stocks</p>
+
+<p><strong>Limit Order</strong>: client wants to buy/sell at a specific price, will only execute at specified price OR better - takes longer than market order</p>
+<ul>
+<li>Buy limit order will be at that price or lower</li>
+<li>Sell limit order will be at that price or higher</li>
+<li>Used for illiquid stocks or big order, there is a risk order is not executed</li>
+</ul>
+
+<p><strong>Stop (Loss) Orders</strong>: Contingent order, executed when market price of a stock rises or falls to specified price. If it reaches that price (stop price), it activates and becomes a market order - no guarantees on price of execution</p>
+<ul>
+<li><strong>Sell Stop</strong>: Placed below current market price - used to limit a loss on a long stock position</li>
+<li><strong>Buy Stop</strong>: Placed above -- used by short sellers</li>
+</ul>
+
+<p><strong>Stop Limit Order</strong>: Similar to Stop order, but instead of activating as market order, it activates as a limit order w specified price</p>
+<ul>
+<li>May not receive execution, unlike stop order</li>
+</ul>
+
+<p><strong>Day Orders</strong>: Good for the day (9:30AM to 4:00PM ET) - cancels at end of day</p>
+
+<p><strong>Good Till Cancelled (GTC) / Open Order</strong>: Remains in effect on broker-dealers order book until either executed or cancelled</p>
+<ul>
+<li>Can be any specified length of time</li>
+<li>Must be updated with partial fills</li>
+</ul>
+<div class="nav" style="margin-top: 32px; border-top: 1px solid #ddd; padding-top: 16px;"><a href="/sie/11-offerings.html">&larr; Offerings</a> · <a href="/sie/13-settlement-and-corporate-actions.html">Settlement and Corporate Actions &rarr;</a></div>
+</body>
+</html>

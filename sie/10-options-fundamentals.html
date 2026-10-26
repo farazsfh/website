@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+<title>10. Options Fundamentals - SIE Notes</title>
+<style>
+body { font-family: 'Nunito', system-ui, sans-serif; margin: 0; padding: 0; max-width: 800px; margin: 0 auto; padding: 20px; line-height: 1.6; }
+h1, h2, h3 { margin: 1.2em 0 0.4em; }
+h1 { font-size: 1.6em; }
+h2 { font-size: 1.3em; }
+a { color: #1a73e8; text-decoration: none; }
+a:hover { text-decoration: underline; }
+img { max-width: 100%; border-radius: 6px; margin: 12px 0; }
+ul, ol { padding-left: 1.5em; }
+li { margin: 4px 0; }
+.nav { margin-bottom: 24px; font-size: 0.9em; }
+.nav a { margin-right: 12px; }
+.chapter-list { list-style: none; padding: 0; }
+.chapter-list li { margin: 8px 0; }
+.chapter-list a { font-size: 1.05em; }
+#toggle { position: absolute; top: 10px; right: 20px; cursor: pointer; z-index: 2; }
+body.dark { background: #1a1a1a; color: #ddd; }
+body.dark a { color: #8cb4ff; }
+body.dark img { border: 1px solid #333; }
+
+</style>
+</head>
+<body>
+<a id="toggle" onclick="document.body.classList.toggle('dark'); this.textContent = document.body.classList.contains('dark') ? 'light mode' : 'dark mode';">dark mode</a>
+
+<div class="nav"><a href="/sie/">&larr; All Chapters</a> · <a href="/">Home</a></div>
+<h1>10. Options Fundamentals</h1>
+<p><strong>Option</strong>: A derivative security thats price is based off the price of an underlying stock, index, currency, or other asset</p>
+<ul>
+<li>Has 2 parties, the buyer/owner/holder and the seller</li>
+</ul>
+
+<p><strong>Buyer</strong>: pays the option&#x27;s premium (the contract&#x27;s market price) - <em>long</em> the option, receives right to exercise the contract</p>
+<ul>
+<li>Depending on the type of option, they have the right to either buy or sell the underlying security</li>
+<li>If option expires worthless, the premium is the buyer&#x27;s max loss</li>
+</ul>
+
+<p><strong>Seller</strong>: Receives the options premium and assumes obligations if contract is exercised - <em>short</em> the option</p>
+<ul>
+<li>If option expires worthless, the premium is the seller&#x27;s maximum gain</li>
+</ul>
+
+<p><strong>Call Option</strong>: Gives the owner the right to BUY underlying security at a fixed price</p>
+<ul>
+<li>Buyers of calls are bullish (want the price to go up, and they can buy at lower price)</li>
+<li>Sellers of calls are bearish (want the price to go down so they can make a profit)</li>
+</ul>
+
+<p><strong>Put Option</strong>: Gives the owner the right to SELL underlying security at a fixed price</p>
+<ul>
+<li>Buyers of puts are bearish</li>
+<li>Sellers of puts are bullish</li>
+</ul>
+
+<p><strong>Components</strong></p>
+<ul>
+<li><strong>Security</strong>: the underlying security, typically right to buy/sell 100 shares of it</li>
+<li><strong>Expiration Month</strong>: The month of expiry, when it ceases to exist (3rd Friday of this month)</li>
+<li><strong>Exercise (Strike) Price</strong>: The price in which the owner may buy/sell</li>
+<li><strong>Type</strong>: Call or Put</li>
+<li><strong>Premium</strong>: The market price of the option, represented in points ($ per share), multiply by 100 to find the total price paid to buy option contract</li>
+<ul>
+<li>Changes value in secondary market when contract is bought/sold. Affected by underlying stock price, time to expiry, volatility</li>
+</ul>
+</ul>
+
+<p><strong>Option Premium</strong> = Intrinsic value (amount <strong>IN</strong> the money) + time value (higher if longer expiry)</p>
+
+<p><strong>Speculation</strong>: Buying options to make profit based on anticipated price changes for a security one doesn&#x27;t own</p>
+
+<p><strong>Hedging</strong>: Purchasing options to protect against risk of adverse movement of price in a security one already owns</p>
+
+<p><strong>Option Events</strong></p>
+<ul>
+<li><strong>Liquidate/Trade/Close-out</strong>: </li>
+<li><strong>Exercise</strong>: Executing the buy/sell of the underlying security</li>
+<ul>
+<li><strong>American Style</strong> = may be exercised at any time up to the day on which they expire, all equity options are American style</li>
+<li><strong>European Style</strong> = may only be exercised at a specific point in time (usually day of expiry), prevalent w/ index and currency options</li>
+<li>If a buyer exercises an option, the seller must fulfill their obligation</li>
+<ul>
+<li>For equity option calls, this means delivering 100 shares of the stock at agreed upon strike price regardless of current market value (or opposite for puts)</li>
+</ul>
+<li>Steps to exercise, takes 1 business day for equity options (T + 1)</li>
+<ul>
+<li><em>Buyer&#x27;s Exercise</em>: buyer notifies broker-dealer of their intent to exercise</li>
+<li><em>Broker dealer notifies OCC</em></li>
+<li><em>OCC will randomly issue the exercise notice to a broker dealer that has the opposite position</em></li>
+<li><em>The broker-dealer that receives the notice will select a client to whom to assign the notice (random, FIFO, etc.)</em></li>
+</ul>
+</ul>
+<li><strong>Expire</strong>: If an option is at or out of the money, there is no point in exercising it, thus buyers will let it expire</li>
+<ul>
+<li>Options expire on the 3rd Friday of the expiration month at 11:59PM ET</li>
+<li>Buyer must notify by 5:30 PM ET that day if they choose to exercise</li>
+<li>Options stop trading at 4:00 PM ET that day</li>
+</ul>
+</ul>
+
+<p><strong>Options Clearing Corporation (OCC)</strong>: Organization that guarantees all listed options</p>
+<ul>
+<li>Built to avoid possibility of option sellers being unable to fulfill their obligations</li>
+</ul>
+
+<p><strong>Options Disclosure Document</strong>: The document issues to customers who open options account by member firms - details description of options, risk, terminology, etc.</p>
+
+<p><strong>Index Options</strong>: Options against indexes like the S&amp;P 500</p>
+<ul>
+<li>Settled in <strong>cash</strong> that represents the amount the option is in the money instead of buying/selling equity</li>
+</ul>
+
+<p><strong>Hedging w/ Options</strong></p>
+<p><img src="images/Pasted image 20260927190546.png" alt="Pasted image 20260927190546.png"></p>
+<p><strong>Covered Call</strong>: Selling a call while owning the underlying security (loss capped)</p>
+<p><strong>Uncovered Call</strong>: Selling a call without owning underlying security (price may rise an infinite amount)</p>
+
+<p><strong>Covered Put</strong>: The seller of the put must either be short the underlying stock or deposit cash equal to strike price. If they don&#x27;t deposit the right amnt of cash, its an uncovered put.</p>
+<div class="nav" style="margin-top: 32px; border-top: 1px solid #ddd; padding-top: 16px;"><a href="/sie/9-alternative-investments.html">&larr; Alternative Investments</a> · <a href="/sie/11-offerings.html">Offerings &rarr;</a></div>
+</body>
+</html>

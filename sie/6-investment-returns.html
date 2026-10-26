@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+<title>6. Investment Returns - SIE Notes</title>
+<style>
+body { font-family: 'Nunito', system-ui, sans-serif; margin: 0; padding: 0; max-width: 800px; margin: 0 auto; padding: 20px; line-height: 1.6; }
+h1, h2, h3 { margin: 1.2em 0 0.4em; }
+h1 { font-size: 1.6em; }
+h2 { font-size: 1.3em; }
+a { color: #1a73e8; text-decoration: none; }
+a:hover { text-decoration: underline; }
+img { max-width: 100%; border-radius: 6px; margin: 12px 0; }
+ul, ol { padding-left: 1.5em; }
+li { margin: 4px 0; }
+.nav { margin-bottom: 24px; font-size: 0.9em; }
+.nav a { margin-right: 12px; }
+.chapter-list { list-style: none; padding: 0; }
+.chapter-list li { margin: 8px 0; }
+.chapter-list a { font-size: 1.05em; }
+#toggle { position: absolute; top: 10px; right: 20px; cursor: pointer; z-index: 2; }
+body.dark { background: #1a1a1a; color: #ddd; }
+body.dark a { color: #8cb4ff; }
+body.dark img { border: 1px solid #333; }
+
+</style>
+</head>
+<body>
+<a id="toggle" onclick="document.body.classList.toggle('dark'); this.textContent = document.body.classList.contains('dark') ? 'light mode' : 'dark mode';">dark mode</a>
+
+<div class="nav"><a href="/sie/">&larr; All Chapters</a> · <a href="/">Home</a></div>
+<h1>6. Investment Returns</h1>
+<p><strong>Dividends</strong>: equity securities make you a part owner - a corporation <strong>MAY</strong> pay out dividends to allow its shareholders to participate in earnings</p>
+<ul>
+<li>The board of directors decide what dividends (if any) it will pay out to common stockholders</li>
+<li><strong>Declaration date</strong>: the date on which the dividend is authorized, anyone owning a share on the <strong>record date</strong> will be entitled to the dividend</li>
+<li><strong>Payment date</strong>: The date the dividend is actually paid out (usually quarterly payments - taxable in year paid)</li>
+<li><strong>Record date</strong>: The date on which an investor must officially own the stock to be entitled to receive the dividend</li>
+</ul>
+<p><img src="images/Pasted image 20260929170109.png" alt="Pasted image 20260929170109.png"></p>
+<p><strong>Ex-Dividend Rule</strong>: The SRO (e.g FINRA) sets this date which represents the date the stock starts to trade without its dividend - it is the same date as the record date.</p>
+<ul>
+<li>E.g: if someone buys the stock on or after the date, it will settle in T + 1, so they will not be entitled to a dividend on the payment date</li>
+<li>On the Ex-Dividend date, the stock open price will be reduced by the amount equal to the dividend (rounded up if fractional)</li>
+<li>If a trade is executed before the ex-dividend date and delivered after the record date, it will be marked w a <strong>Due Bill</strong> which creates a liability for the seller to deliver the dividend to the buyer for good delivery</li>
+<li>If using <strong>cash settlement</strong>, the buyer may buy ON the ex-dividend date, the price will be adjusted to include the dividend</li>
+<li><strong>Stock Dividends</strong>: when a company pays out shares instead of cash for a dividend</li>
+<ul>
+<li>not taxable until additional shares are sold (must adjust cost basis though)</li>
+</ul>
+</ul>
+
+<p><strong>Current Yield (Dividend Yield)</strong> = Total Annual Dividend / Current Price</p>
+
+<p><strong>Return on Bonds</strong> = Coupon Rate * Par value ($1000)</p>
+<ul>
+<li>Regardless of what someone paid, its always based on par value</li>
+</ul>
+
+<p><strong>Nominal Yield : Same as </strong>coupon rate** - regardless of price paid for the bond</p>
+<ul>
+<li>Doesn&#x27;t take into account price paid</li>
+</ul>
+
+<p><strong>Current Yield</strong> = Annual Interest / Current Market Price</p>
+<ul>
+<li>Measures what the investor receives each year based on the current market price</li>
+<li>Buying at a <em>discount</em> increases current yield, buying at a <em>premium</em> decreases current yield</li>
+<li>Doesn&#x27;t take into account payment at maturity</li>
+</ul>
+
+<p><strong>Yield-to-Maturity (YTM)</strong>: Takes into account bonds interest payments PLUS difference in paid price for bond and par value</p>
+<ul>
+<li>Also referred to as <em>yield</em> or <em>basis</em></li>
+<li>At a premium -&gt; YTM is lowest, current yield higher, and nominal highest</li>
+<li>At a discount -&gt; YTM is highest, current yield lower, and nominal lowest</li>
+</ul>
+
+<p><img src="images/Pasted image 20260929175448.png" alt="Pasted image 20260929175448.png"></p>
+<p><strong>Bond - Yield-to-Call (YTC)</strong>: A bond&#x27;s yield if it is called early</p>
+<ul>
+<li>If a bond is trading at a discount, the YTC is higher than the YTM</li>
+<li>If a bond is trading a premium (and callable at par), the YTC is lower than the YTM</li>
+</ul>
+<p><strong>Bond - Yield-to-Worst (YTW)</strong>: The worse of a bonds YTM and YTC</p>
+
+<p><strong>Cost Basis</strong>: Total amount an investor has paid to purchase a security, including commissions and fees.</p>
+<ul>
+<li>Some securities make distributions that increase cost basis due to paying tax on distributions</li>
+<li>The cost basis on death inheritance is market value of security on day of death of previous owner</li>
+</ul>
+
+<p><strong>Capital Gains</strong>: when an investment is sold for greater than its cost basis</p>
+<ul>
+<li>Held for &lt;=1yr -&gt; short term capital gains (ordinary income rate/marginal tax rate)</li>
+<li>Help for &gt;1yr -&gt; long term capital gains tax (maximum is 20%)</li>
+</ul>
+
+<p><strong>Capital Losses</strong>: when an investment is sold for less than its cost basis</p>
+<ul>
+<li>used to reduce capital gains, if losses are more than gains, a max of $3000 capital losses can be used to reduce income tax, remaining carries over to future years</li>
+</ul>
+
+<p><strong>Return of Capital</strong>: return of a part of the original investment, not a taxable event</p>
+
+<p><strong>Identifying Shares Sold</strong>: If an investor buys the same security multiple times and doesn&#x27;t choose which shares they are selling, FIFO is used by default by the IRS</p>
+<ul>
+<li>They must say &quot;versus purchase of X date&quot; to pick</li>
+</ul>
+
+<p><strong>Total Return</strong> = (change in value + investment income) / beginning value</p>
+<ul>
+<li>typically calculated over 1yr, expressed as percentage</li>
+</ul>
+
+<p><strong>Inflation-Adjusted Rate of Return</strong> = actual return - rate of inflation</p>
+
+<p><strong>Risk-Free Return</strong>: the return on an investment that is risk free, usually the US T-bill or US treasury note is used for this</p>
+
+<p><strong>Risk-Adjusted Return</strong>: how much an investment returns in relation to risk assumed to attain it</p>
+
+<p><strong>Averages/Indexes</strong>: a group of securities</p>
+<ul>
+<li><strong>Dow Jones Average</strong>: 65 stocks in these categories</li>
+<ul>
+<li>Dow Jones Industrial Average, which consists of 30 stocks -&gt; most common, blue chip companies that represent the backbone of the US</li>
+<li>Dow Jones Transportation Average, which consists of 20 stocks</li>
+<li>Dow Jones Utility Average, which consists of 15 stocks</li>
+</ul>
+<li><strong>The Standard &amp; Poor’s 500 Index</strong>: the biggest 500 companies in the NYSE and NASDAQ</li>
+<li><strong>NYSE Composite Index</strong>: Every stock on the NYSE</li>
+<li><strong>NASDAQ Composite Index</strong>: All of NASDAQ</li>
+<li><strong>NASDAQ 100</strong>: Top 100 NASDAQ companies</li>
+<li><strong>The Wilshire Associates Equity Index</strong>: Every stock on the NYSE and NASDAQ</li>
+<li><strong>The Russel Index</strong>: 2000 small cap companies</li>
+<li><strong>The Major Market Index</strong>: 20 big cap stocks</li>
+<li><strong>Debt/Bond Indices</strong>: Barclaus, The Bond Buyer -&gt; track bond market</li>
+</ul>
+<div class="nav" style="margin-top: 32px; border-top: 1px solid #ddd; padding-top: 16px;"><a href="/sie/5-types-of-debt-instruments.html">&larr; Types of Debt Instruments</a> · <a href="/sie/7-packaged-products.html">Packaged Products &rarr;</a></div>
+</body>
+</html>

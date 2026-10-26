@@ -33,12 +33,13 @@ header { max-width: 600px; margin: 0 auto; padding: 40px 20px 20px; position: re
 
 <body>
 
-<a id="toggle" onclick="document.body.classList.toggle('dark'); this.textContent = document.body.classList.contains('dark') ? 'light mode' : 'dark mode';">dark mode</a>
+<a id="toggle" onclick="document.body.classList.toggle('dark'); var d = document.body.classList.contains('dark'); this.textContent = d ? 'light mode' : 'dark mode'; sessionStorage.setItem('dark', d);">dark mode</a>
+<script>if (sessionStorage.getItem('dark') === 'true') { document.body.classList.add('dark'); document.getElementById('toggle').textContent = 'light mode'; }</script>
 
 <header>
 <h1>Faraz Hussain</h1>
 <p>Bachelor of Science, Computer Science @ University of Toronto (2023)</p>
-<p><a href="https://www.linkedin.com/in/farazsfh/">linkedin</a> · <a href="https://scholar.google.com/">google scholar</a></p>
+<p><a href="https://www.linkedin.com/in/farazsfh/">linkedin</a></p>
 </header>
 
 <div class="layout">
